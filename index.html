@@ -3,937 +3,1135 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>CEFABEX INNOVATIONS | Technology • Innovation • Growth</title>
+
 <style>
-/* =========================
-   RESET
-========================= */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
-/* =========================
-   BODY
-========================= */
-body {
-    font-family: Inter, Arial, sans-serif;
-    background: #f5f9ff;
-    color: #10243e;
-    overflow-x: hidden;
+
+body{
+    font-family:Arial, sans-serif;
+    background:#f5f9ff;
+    color:#10243e;
+    overflow-x:hidden;
 }
-.container {
-    width: min(1100px, 92%);
-    margin: auto;
+
+.container{
+    width:min(1100px,92%);
+    margin:auto;
 }
-/* =========================
-   NAVBAR
-========================= */
-nav {
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    background: rgba(255, 255, 255, 0.90);
-    backdrop-filter: blur(18px);
-    border-bottom: 1px solid #dce8f5;
+
+/* ================= NAVBAR ================= */
+
+nav{
+    position:sticky;
+    top:0;
+    z-index:1000;
+    background:rgba(255,255,255,.92);
+    backdrop-filter:blur(18px);
+    border-bottom:1px solid #dce8f5;
 }
-.nav-inner {
-    height: 72px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+
+.nav-inner{
+    min-height:72px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
 }
-.logo {
-    font-size: 21px;
-    font-weight: 800;
-    letter-spacing: 1px;
-    color: #0b63ce;
+
+.logo{
+    font-size:21px;
+    font-weight:800;
+    letter-spacing:1px;
+    color:#0b63ce;
 }
-.logo span {
-    color: #10243e;
+
+.logo span{
+    color:#10243e;
 }
-.nav-btn {
-    text-decoration: none;
-    background: #0b63ce;
-    color: white;
-    padding: 11px 18px;
-    border-radius: 30px;
-    font-size: 13px;
-    font-weight: 700;
+
+.nav-btn{
+    text-decoration:none;
+    background:#0b63ce;
+    color:white;
+    padding:12px 20px;
+    border-radius:30px;
+    font-size:13px;
+    font-weight:700;
 }
-/* =========================
-   HERO
-========================= */
-.hero {
-    min-height: 650px;
-    display: flex;
-    align-items: center;
-    position: relative;
-    overflow: hidden;
+
+/* ================= HERO ================= */
+
+.hero{
+    min-height:650px;
+    display:flex;
+    align-items:center;
+    position:relative;
+    overflow:hidden;
 }
-.hero::before {
-    content: "";
-    position: absolute;
-    width: 430px;
-    height: 430px;
-    border-radius: 50%;
-    background: #cfe5ff;
-    filter: blur(70px);
-    right: -150px;
-    top: 60px;
-    opacity: 0.65;
+
+.hero:before{
+    content:"";
+    position:absolute;
+    width:430px;
+    height:430px;
+    border-radius:50%;
+    background:#cfe5ff;
+    filter:blur(70px);
+    right:-150px;
+    top:60px;
+    opacity:.65;
 }
-.hero::after {
-    content: "";
-    position: absolute;
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    background: #dff4ff;
-    filter: blur(60px);
-    left: -100px;
-    bottom: 20px;
+
+.hero:after{
+    content:"";
+    position:absolute;
+    width:300px;
+    height:300px;
+    border-radius:50%;
+    background:#dff4ff;
+    filter:blur(60px);
+    left:-100px;
+    bottom:20px;
 }
-.hero-content {
-    position: relative;
-    z-index: 2;
-    max-width: 750px;
+
+.hero-content{
+    position:relative;
+    z-index:2;
+    max-width:750px;
 }
-.badge {
-    display: inline-flex;
-    padding: 8px 14px;
-    border-radius: 30px;
-    background: #e5f1ff;
-    color: #0864cf;
-    font-size: 12px;
-    font-weight: 800;
-    margin-bottom: 22px;
+
+.badge{
+    display:inline-flex;
+    padding:8px 14px;
+    border-radius:30px;
+    background:#e5f1ff;
+    color:#0864cf;
+    font-size:12px;
+    font-weight:800;
+    margin-bottom:22px;
 }
-.hero h1 {
-    font-size: clamp(42px, 7vw, 78px);
-    line-height: 0.98;
-    letter-spacing: -3px;
-    margin-bottom: 24px;
+
+.hero h1{
+    font-size:clamp(42px,7vw,78px);
+    line-height:.98;
+    letter-spacing:-3px;
+    margin-bottom:24px;
 }
-.hero h1 span {
-    color: #0b63ce;
+
+.hero h1 span{
+    color:#0b63ce;
 }
-.hero p {
-    font-size: 18px;
-    line-height: 1.7;
-    color: #5c6f85;
-    max-width: 650px;
+
+.hero p{
+    font-size:18px;
+    line-height:1.7;
+    color:#5c6f85;
+    max-width:650px;
 }
-.hero-buttons {
-    margin-top: 32px;
-    display: flex;
-    gap: 12px;
-    flex-wrap: wrap;
+
+.hero-buttons{
+    margin-top:32px;
+    display:flex;
+    gap:12px;
+    flex-wrap:wrap;
 }
+
 .primary,
-.secondary {
-    text-decoration: none;
-    padding: 15px 23px;
-    border-radius: 12px;
-    font-weight: 800;
+.secondary{
+    text-decoration:none;
+    padding:15px 23px;
+    border-radius:12px;
+    font-weight:800;
 }
-.primary {
-    background: #0b63ce;
-    color: white;
-    box-shadow: 0 12px 28px rgba(11, 99, 206, 0.20);
+
+.primary{
+    background:#0b63ce;
+    color:#fff;
+    box-shadow:0 12px 28px rgba(11,99,206,.2);
 }
-.secondary {
-    background: white;
-    color: #0b63ce;
-    border: 1px solid #d7e6f7;
+
+.secondary{
+    background:#fff;
+    color:#0b63ce;
+    border:1px solid #d7e6f7;
 }
-/* =========================
-   SECTIONS
-========================= */
-section {
-    padding: 85px 0;
+
+/* ================= SECTIONS ================= */
+
+section{
+    padding:85px 0;
 }
-.section-title {
-    text-align: center;
-    margin-bottom: 45px;
+
+.section-title{
+    text-align:center;
+    margin-bottom:45px;
 }
-.section-title small {
-    color: #0b63ce;
-    font-weight: 800;
-    letter-spacing: 2px;
+
+.section-title small{
+    color:#0b63ce;
+    font-weight:800;
+    letter-spacing:2px;
 }
-.section-title h2 {
-    font-size: 40px;
-    margin-top: 10px;
+
+.section-title h2{
+    font-size:40px;
+    margin-top:10px;
 }
-.section-title p {
-    color: #687b91;
-    margin-top: 12px;
+
+.section-title p{
+    color:#687b91;
+    margin-top:12px;
 }
-/* =========================
-   SERVICES
-========================= */
-.services {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 18px;
+
+/* ================= SERVICES ================= */
+
+.services{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:18px;
 }
-.service {
-    background: rgba(255, 255, 255, 0.90);
-    border: 1px solid #dce8f5;
-    border-radius: 22px;
-    padding: 27px;
-    min-height: 230px;
-    box-shadow: 0 12px 35px rgba(30, 75, 120, 0.06);
-    transition: 0.25s;
+
+.service{
+    background:rgba(255,255,255,.9);
+    border:1px solid #dce8f5;
+    border-radius:22px;
+    padding:27px;
+    min-height:230px;
+    box-shadow:0 12px 35px rgba(30,75,120,.06);
+    transition:.25s;
 }
-.service:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 20px 45px rgba(30, 75, 120, 0.12);
+
+.service:hover{
+    transform:translateY(-6px);
 }
-.icon {
-    width: 52px;
-    height: 52px;
-    display: grid;
-    place-items: center;
-    background: #e9f3ff;
-    border-radius: 15px;
-    font-size: 25px;
-    margin-bottom: 20px;
+
+.icon{
+    width:52px;
+    height:52px;
+    display:grid;
+    place-items:center;
+    background:#e9f3ff;
+    border-radius:15px;
+    font-size:25px;
+    margin-bottom:20px;
 }
-.service h3 {
-    margin-bottom: 12px;
+
+.service h3{
+    margin-bottom:12px;
 }
-.service ul {
-    list-style: none;
-    color: #687b91;
-    line-height: 1.9;
-    font-size: 14px;
+
+.service ul{
+    list-style:none;
+    color:#687b91;
+    line-height:1.9;
+    font-size:14px;
 }
-/* =========================
-   LEAD SECTION
-========================= */
-.lead-section {
-    background: #0d2340;
-    color: white;
-    position: relative;
-    overflow: hidden;
+
+/* ================= LEAD SECTION ================= */
+
+.lead-section{
+    background:#0d2340;
+    color:white;
+    position:relative;
+    overflow:hidden;
 }
-.lead-section::before {
-    content: "";
-    position: absolute;
-    width: 450px;
-    height: 450px;
-    border-radius: 50%;
-    background: #0b63ce;
-    filter: blur(120px);
-    opacity: 0.35;
-    right: -120px;
-    top: -150px;
+
+.lead-grid{
+    position:relative;
+    z-index:2;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:60px;
+    align-items:center;
 }
-.lead-grid {
-    position: relative;
-    z-index: 2;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 60px;
-    align-items: center;
+
+.lead-text small{
+    color:#66b5ff;
+    font-weight:800;
+    letter-spacing:2px;
 }
-.lead-text small {
-    color: #66b5ff;
-    font-weight: 800;
-    letter-spacing: 2px;
+
+.lead-text h2{
+    font-size:48px;
+    line-height:1.05;
+    margin:15px 0 20px;
 }
-.lead-text h2 {
-    font-size: 48px;
-    line-height: 1.05;
-    margin: 15px 0 20px;
+
+.lead-text p{
+    color:#b8c8d9;
+    line-height:1.7;
 }
-.lead-text p {
-    color: #b8c8d9;
-    line-height: 1.7;
+
+.points{
+    margin-top:25px;
+    display:grid;
+    gap:12px;
 }
-.points {
-    margin-top: 25px;
-    display: grid;
-    gap: 12px;
+
+.points div{
+    color:#dce9f7;
 }
-.points div {
-    color: #dce9f7;
+
+/* ================= FORM ================= */
+
+.form-card{
+    background:white;
+    color:#10243e;
+    padding:32px;
+    border-radius:26px;
+    box-shadow:0 25px 70px rgba(0,0,0,.2);
 }
-/* =========================
-   FORM
-========================= */
-.form-card {
-    background: white;
-    color: #10243e;
-    padding: 32px;
-    border-radius: 26px;
-    box-shadow: 0 25px 70px rgba(0, 0, 0, 0.20);
+
+.form-card h3{
+    font-size:25px;
+    margin-bottom:7px;
 }
-.form-card h3 {
-    font-size: 25px;
-    margin-bottom: 7px;
+
+.sub{
+    color:#718398;
+    font-size:13px;
+    margin-bottom:25px;
 }
-.form-card .sub {
-    color: #718398;
-    font-size: 13px;
-    margin-bottom: 25px;
+
+.field{
+    margin-bottom:16px;
 }
-.field {
-    margin-bottom: 16px;
+
+.field label{
+    display:block;
+    font-size:12px;
+    font-weight:800;
+    margin-bottom:7px;
 }
-.field label {
-    display: block;
-    font-size: 12px;
-    font-weight: 800;
-    margin-bottom: 7px;
-}
+
 .field input,
 .field textarea,
-.field select {
-    width: 100%;
-    border: 1px solid #d8e3ef;
-    border-radius: 11px;
-    padding: 13px;
-    outline: none;
-    font: inherit;
-    background: #fbfdff;
+.field select{
+    width:100%;
+    border:1px solid #d8e3ef;
+    border-radius:11px;
+    padding:13px;
+    outline:none;
+    font:inherit;
+    background:#fbfdff;
 }
+
 .field input:focus,
 .field textarea:focus,
-.field select:focus {
-    border-color: #0b63ce;
-    box-shadow: 0 0 0 4px rgba(11, 99, 206, 0.08);
+.field select:focus{
+    border-color:#0b63ce;
+    box-shadow:0 0 0 3px rgba(11,99,206,.08);
 }
-.field textarea {
-    height: 100px;
-    resize: vertical;
+
+.field textarea{
+    height:95px;
+    resize:none;
 }
-/* =========================
-   CONSENT
-========================= */
-.consent {
-    display: flex;
-    align-items: flex-start;
-    gap: 10px;
-    margin: 18px 0;
-    font-size: 12px;
-    color: #687b91;
+
+/* CONSENT */
+
+.consent{
+    display:flex;
+    align-items:flex-start;
+    gap:10px;
+    margin:20px 0;
+    color:#687b91;
+    font-size:13px;
+    line-height:1.5;
 }
-.consent input {
-    margin-top: 3px;
+
+.consent input{
+    width:18px;
+    height:18px;
+    margin-top:2px;
+    flex-shrink:0;
 }
-/* =========================
-   SUBMIT BUTTON
-========================= */
-#submitBtn {
-    width: 100%;
-    border: 0;
-    padding: 16px;
-    background: #0b63ce;
-    color: white;
-    border-radius: 12px;
-    font-weight: 800;
-    font-size: 14px;
-    letter-spacing: 0.5px;
-    cursor: pointer;
-    transition: 0.25s;
+
+/* BUTTON */
+
+#submitBtn{
+    width:100%;
+    border:0;
+    padding:16px;
+    background:#0b63ce;
+    color:white;
+    border-radius:12px;
+    font-weight:800;
+    font-size:15px;
+    cursor:pointer;
+    transition:.25s;
 }
-#submitBtn:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 12px 30px rgba(11, 99, 206, 0.25);
+
+#submitBtn:hover{
+    transform:translateY(-2px);
+    box-shadow:0 12px 30px rgba(11,99,206,.25);
 }
-#submitBtn:disabled {
-    opacity: 0.6;
-    cursor: wait;
+
+#submitBtn:disabled{
+    opacity:.65;
+    cursor:wait;
 }
-/* =========================
-   STATUS
-========================= */
-#status {
-    margin-top: 18px;
-    text-align: center;
-    font-size: 14px;
-    min-height: 20px;
+
+/* STATUS */
+
+#status{
+    margin-top:18px;
+    text-align:center;
+    font-size:14px;
+    min-height:20px;
 }
-.success {
-    color: #16803c;
+
+.success{
+    color:#16803c;
 }
-.error {
-    color: #c62828;
+
+.error{
+    color:#c62828;
 }
-/* =========================
-   TRUST
-========================= */
-.trust {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+
+/* ================= TRUST ================= */
+
+.trust{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
 }
-.trust-box {
-    background: white;
-    padding: 30px;
-    border: 1px solid #dce8f5;
-    border-radius: 20px;
-    text-align: center;
+
+.trust-box{
+    background:white;
+    padding:30px;
+    border:1px solid #dce8f5;
+    border-radius:20px;
+    text-align:center;
 }
-.trust-box strong {
-    display: block;
-    font-size: 19px;
-    margin-bottom: 8px;
+
+.trust-box strong{
+    display:block;
+    font-size:19px;
+    margin-bottom:8px;
 }
-.trust-box span {
-    color: #718398;
-    font-size: 14px;
+
+.trust-box span{
+    color:#718398;
+    font-size:14px;
 }
-/* =========================
-   FOOTER
-========================= */
-footer {
-    background: #071729;
-    color: #aebed0;
-    padding: 40px 0;
+
+/* ================= FOOTER ================= */
+
+footer{
+    background:#071729;
+    color:#aebed0;
+    padding:40px 0;
 }
-.footer-inner {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-    flex-wrap: wrap;
+
+.footer-inner{
+    display:flex;
+    justify-content:space-between;
+    gap:20px;
+    flex-wrap:wrap;
 }
-.footer-logo {
-    color: white;
-    font-size: 20px;
-    font-weight: 800;
+
+.footer-logo{
+    color:white;
+    font-size:20px;
+    font-weight:800;
 }
-.footer-contact {
-    text-align: right;
-    line-height: 1.8;
-    font-size: 14px;
+
+.footer-contact{
+    text-align:right;
+    line-height:1.8;
+    font-size:14px;
 }
-/* =========================
-   MOBILE
-========================= */
-@media (max-width: 850px) {
-    .services {
-        grid-template-columns: repeat(2, 1fr);
+
+/* ================= MOBILE ================= */
+
+@media(max-width:850px){
+
+    .services{
+        grid-template-columns:repeat(2,1fr);
     }
-    .lead-grid {
-        grid-template-columns: 1fr;
+
+    .lead-grid{
+        grid-template-columns:1fr;
     }
-    .lead-text h2 {
-        font-size: 40px;
-    }
-}
-@media (max-width: 600px) {
-    .nav-inner {
-        height: 64px;
-    }
-    .logo {
-        font-size: 16px;
-    }
-    .nav-btn {
-        padding: 9px 13px;
-        font-size: 11px;
-    }
-    .hero {
-        min-height: 600px;
-    }
-    .hero h1 {
-        font-size: 47px;
-        letter-spacing: -2px;
-    }
-    .hero p {
-        font-size: 15px;
-    }
-    section {
-        padding: 65px 0;
-    }
-    .section-title h2 {
-        font-size: 31px;
-    }
-    .services {
-        grid-template-columns: 1fr;
-    }
-    .trust {
-        grid-template-columns: 1fr;
-    }
-    .form-card {
-        padding: 23px;
-    }
-    .footer-contact {
-        text-align: left;
+
+    .lead-text h2{
+        font-size:40px;
     }
 }
+
+@media(max-width:600px){
+
+    .nav-inner{
+        min-height:64px;
+    }
+
+    .logo{
+        font-size:18px;
+    }
+
+    .nav-btn{
+        padding:9px 13px;
+        font-size:11px;
+    }
+
+    .hero{
+        min-height:600px;
+    }
+
+    .hero h1{
+        font-size:47px;
+        letter-spacing:-2px;
+    }
+
+    .hero p{
+        font-size:15px;
+    }
+
+    section{
+        padding:65px 0;
+    }
+
+    .section-title h2{
+        font-size:31px;
+    }
+
+    .services{
+        grid-template-columns:1fr;
+    }
+
+    .trust{
+        grid-template-columns:1fr;
+    }
+
+    .form-card{
+        padding:23px;
+    }
+
+    .footer-contact{
+        text-align:left;
+    }
+}
+
 </style>
 </head>
+
 <body>
-<!-- =========================
-     NAVIGATION
-========================= -->
+
+<!-- ================= NAVIGATION ================= -->
+
 <nav>
+
     <div class="container nav-inner">
+
         <div class="logo">
             CEFABEX <span>INNOVATIONS</span>
         </div>
+
         <a href="#contact" class="nav-btn">
             Get Started
         </a>
+
     </div>
+
 </nav>
-<!-- =========================
-     HERO
-========================= -->
+
+
+<!-- ================= HERO ================= -->
+
 <header class="hero">
+
     <div class="container">
+
         <div class="hero-content">
+
             <div class="badge">
                 TECHNOLOGY • INNOVATION • GROWTH
             </div>
+
             <h1>
                 We Build<br>
                 <span>Digital Solutions.</span>
             </h1>
+
             <p>
                 Practical technology for businesses, students and innovators —
                 from websites and digital marketing to innovation projects
                 and career solutions.
             </p>
+
             <div class="hero-buttons">
+
                 <a href="#contact" class="primary">
                     Start a Project →
                 </a>
+
                 <a href="#services" class="secondary">
                     Explore Services
                 </a>
+
             </div>
+
         </div>
+
     </div>
+
 </header>
-<!-- =========================
-     SERVICES
-========================= -->
+
+
+<!-- ================= SERVICES ================= -->
+
 <section id="services">
+
     <div class="container">
+
         <div class="section-title">
+
             <small>WHAT WE DO</small>
-            <h2>
-                Solutions That Move Ideas Forward.
-            </h2>
+
+            <h2>Solutions That Move Ideas Forward.</h2>
+
             <p>
                 From digital presence to innovation — we help turn ideas
                 into practical solutions.
             </p>
+
         </div>
+
+
         <div class="services">
+
             <div class="service">
-                <div class="icon">
-                    💻
-                </div>
-                <h3>
-                    Digital Solutions
-                </h3>
+
+                <div class="icon">💻</div>
+
+                <h3>Digital Solutions</h3>
+
                 <ul>
                     <li>• Website Development</li>
                     <li>• Web Applications</li>
                     <li>• Digital Hall Solutions</li>
                     <li>• Custom Digital Systems</li>
                 </ul>
+
             </div>
+
+
             <div class="service">
-                <div class="icon">
-                    📱
-                </div>
-                <h3>
-                    Marketing & Growth
-                </h3>
+
+                <div class="icon">📱</div>
+
+                <h3>Marketing & Growth</h3>
+
                 <ul>
                     <li>• Social Media Management</li>
                     <li>• Digital Marketing</li>
                     <li>• Content & Branding</li>
                     <li>• SEO & Online Growth</li>
                 </ul>
+
             </div>
+
+
             <div class="service">
-                <div class="icon">
-                    🚀
-                </div>
-                <h3>
-                    Innovation Projects
-                </h3>
+
+                <div class="icon">🚀</div>
+
+                <h3>Innovation Projects</h3>
+
                 <ul>
                     <li>• Hackathon Projects</li>
                     <li>• Student Projects</li>
                     <li>• Prototypes</li>
                     <li>• Practical Tech Solutions</li>
                 </ul>
+
             </div>
+
+
             <div class="service">
-                <div class="icon">
-                    📄
-                </div>
-                <h3>
-                    Career Solutions
-                </h3>
+
+                <div class="icon">📄</div>
+
+                <h3>Career Solutions</h3>
+
                 <ul>
                     <li>• ATS Resumes</li>
                     <li>• Student Portfolios</li>
                     <li>• LinkedIn Profiles</li>
                     <li>• Digital Career Presence</li>
                 </ul>
+
             </div>
+
         </div>
+
     </div>
+
 </section>
-<!-- =========================
-     LEAD FORM
-========================= -->
+
+
+<!-- ================= LEAD FORM ================= -->
+
 <section class="lead-section" id="contact">
+
     <div class="container lead-grid">
+
         <div class="lead-text">
-            <small>
-                LET'S BUILD SOMETHING
-            </small>
+
+            <small>LET'S BUILD SOMETHING</small>
+
             <h2>
                 Have an idea?<br>
                 Let's make it real.
             </h2>
+
             <p>
                 Tell us what you need. Our team will review your requirement
                 and get back to you with the right solution.
             </p>
+
             <div class="points">
-                <div>
-                    ✓ Business Solutions
-                </div>
-                <div>
-                    ✓ Student & Innovation Projects
-                </div>
-                <div>
-                    ✓ Digital Growth
-                </div>
-                <div>
-                    ✓ Career Solutions
-                </div>
+
+                <div>✓ Business Solutions</div>
+                <div>✓ Student & Innovation Projects</div>
+                <div>✓ Digital Growth</div>
+                <div>✓ Career Solutions</div>
+
             </div>
+
         </div>
+
+
         <div class="form-card">
-            <h3>
-                Start Your Enquiry
-            </h3>
+
+            <h3>Start Your Enquiry</h3>
+
             <p class="sub">
                 Tell us a little about your requirement.
             </p>
+
+
             <form id="leadForm">
-                <!-- NAME -->
+
                 <div class="field">
+
                     <label for="name">
                         FULL NAME *
                     </label>
+
                     <input
                         type="text"
                         id="name"
                         placeholder="Your name"
                         required
                     >
+
                 </div>
-                <!-- EMAIL -->
+
+
                 <div class="field">
+
                     <label for="email">
                         EMAIL *
                     </label>
+
                     <input
                         type="email"
                         id="email"
                         placeholder="you@example.com"
                         required
                     >
+
                 </div>
-                <!-- PHONE -->
+
+
                 <div class="field">
+
                     <label for="phone">
                         WHATSAPP NUMBER *
                     </label>
+
                     <input
                         type="tel"
                         id="phone"
                         placeholder="+91 XXXXX XXXXX"
                         required
                     >
+
                 </div>
-                <!-- SERVICE -->
+
+
                 <div class="field">
+
                     <label for="service">
                         WHAT DO YOU NEED? *
                     </label>
+
                     <select id="service" required>
+
                         <option value="">
                             Select a service
                         </option>
+
                         <option value="Website / Web Development">
                             Website / Web Development
                         </option>
+
                         <option value="Digital Hall Solution">
                             Digital Hall Solution
                         </option>
+
                         <option value="Social Media Management">
                             Social Media Management
                         </option>
+
                         <option value="Digital Marketing">
                             Digital Marketing
                         </option>
+
                         <option value="Hackathon / Innovation Project">
                             Hackathon / Innovation Project
                         </option>
+
                         <option value="Student Project">
                             Student Project
                         </option>
+
                         <option value="ATS Resume">
                             ATS Resume
                         </option>
+
                         <option value="Other">
                             Other
                         </option>
+
                     </select>
+
                 </div>
-                <!-- REQUIREMENT -->
+
+
                 <div class="field">
+
                     <label for="message">
                         TELL US ABOUT YOUR REQUIREMENT
                     </label>
+
                     <textarea
                         id="message"
                         placeholder="Briefly describe what you need..."
                     ></textarea>
+
                 </div>
-                <!-- CONSENT -->
+
+
                 <div class="consent">
+
                     <input
                         type="checkbox"
                         id="consent"
                         required
                     >
+
                     <label for="consent">
                         I agree to be contacted by CEFABEX INNOVATIONS
                         regarding my enquiry.
                     </label>
+
                 </div>
-                <!-- BUTTON -->
+
+
                 <button
                     type="submit"
                     id="submitBtn"
                 >
                     SEND ENQUIRY →
                 </button>
-                <!-- STATUS -->
+
+
                 <div id="status"></div>
+
             </form>
+
         </div>
+
     </div>
+
 </section>
-<!-- =========================
-     TRUST
-========================= -->
+
+
+<!-- ================= TRUST ================= -->
+
 <section>
+
     <div class="container">
+
         <div class="section-title">
-            <small>
-                WHY CEFABEX
-            </small>
-            <h2>
-                Built Around Your Requirement.
-            </h2>
+
+            <small>WHY CEFABEX</small>
+
+            <h2>Built Around Your Requirement.</h2>
+
         </div>
+
+
         <div class="trust">
+
             <div class="trust-box">
-                <strong>
-                    Practical
-                </strong>
+
+                <strong>Practical</strong>
+
                 <span>
                     Solutions designed around real requirements.
                 </span>
+
             </div>
+
+
             <div class="trust-box">
-                <strong>
-                    Custom
-                </strong>
+
+                <strong>Custom</strong>
+
                 <span>
                     We adapt our solutions to your goals.
                 </span>
+
             </div>
+
+
             <div class="trust-box">
-                <strong>
-                    Affordable
-                </strong>
+
+                <strong>Affordable</strong>
+
                 <span>
                     Technology that fits your needs and budget.
                 </span>
+
             </div>
+
         </div>
+
     </div>
+
 </section>
-<!-- =========================
-     FOOTER
-========================= -->
+
+
+<!-- ================= FOOTER ================= -->
+
 <footer>
+
     <div class="container footer-inner">
+
         <div>
+
             <div class="footer-logo">
                 CEFABEX INNOVATIONS
             </div>
+
             <p style="margin-top:8px;">
                 Technology • Innovation • Growth
             </p>
+
         </div>
+
+
         <div class="footer-contact">
+
             📲 WhatsApp: 9600371766<br>
+
             📧 cefabex.cfb@gmail.com<br>
+
             📸 @cefabax.cfb
+
         </div>
+
     </div>
+
 </footer>
-<!-- =========================
-     JAVASCRIPT
-========================= -->
+
+
+<!-- ================= JAVASCRIPT ================= -->
+
 <script>
-/*
-========================================
-GOOGLE APPS SCRIPT URL
-========================================
-*/
+
 const SCRIPT_URL =
-"https://script.google.com/macros/s/AKfycbwOg-NGUSAzC4v3ATEqIFXrGr2qBm4OMtU1SCrcB6aa_J4Cx715vnsHYRcWry8e6Rmw/exec";
-/*
-========================================
-WHATSAPP NUMBER
-========================================
-*/
-const WHATSAPP_NUMBER = "9600371766";
-/*
-========================================
-GET FORM ELEMENTS
-========================================
-*/
-const form =
-document.getElementById("leadForm");
-const button =
-document.getElementById("submitBtn");
-const statusBox =
-document.getElementById("status");
-/*
-========================================
-FORM SUBMISSION
-========================================
-*/
-form.addEventListener("submit", async function(event) {
+"https://script.google.com/macros/s/AKfycbzGzHsnaMF_87MZGdyfwZb0ipNXfdkT2121LdcafNUyYb-TqmUSlk1N0Ebi4ldWVW6_/exec"
+
+const WHATSAPP_NUMBER = "919600371766";
+
+const form = document.getElementById("leadForm");
+
+const button = document.getElementById("submitBtn");
+
+const status = document.getElementById("status");
+
+
+form.addEventListener("submit", function(event){
+
     event.preventDefault();
-    /*
-    GET VALUES
-    */
+
+
     const name =
-    document.getElementById("name").value.trim();
+        document.getElementById("name").value.trim();
+
     const email =
-    document.getElementById("email").value.trim();
+        document.getElementById("email").value.trim();
+
     const phone =
-    document.getElementById("phone").value.trim();
+        document.getElementById("phone").value.trim();
+
     const service =
-    document.getElementById("service").value;
+        document.getElementById("service").value;
+
     const message =
-    document.getElementById("message").value.trim();
-    /*
-    VALIDATION
-    */
-    if (!name || !email || !phone || !service) {
-        statusBox.className = "error";
-        statusBox.textContent =
-        "Please fill in all required fields.";
+        document.getElementById("message").value.trim();
+
+
+    if(!name || !email || !phone || !service){
+
+        status.className = "error";
+
+        status.textContent =
+            "Please fill in all required fields.";
+
         return;
+
     }
-    /*
-    DISABLE BUTTON
-    */
-    button.disabled = true;
-    button.textContent =
-    "SENDING...";
-    statusBox.className = "";
-    statusBox.textContent =
-    "Submitting your enquiry...";
-    /*
-    PREPARE DATA
-    */
-    const data =
-    new URLSearchParams();
-    data.append("name", name);
-    data.append("email", email);
-    data.append("phone", phone);
-    data.append("service", service);
-    data.append("requirement", message);
-    /*
-    GOOGLE SHEETS SUBMISSION
-    */
-    try {
-        await fetch(
-            SCRIPT_URL,
-            {
-                method: "POST",
-                mode: "no-cors",
-                headers: {
-                    "Content-Type":
-                    "application/x-www-form-urlencoded"
-                },
-                body: data.toString()
-            }
-        );
-        /*
-        SUCCESS MESSAGE
-        */
-        statusBox.className =
-        "success";
-        statusBox.textContent =
-        "✓ Enquiry submitted successfully!";
-        /*
-        WHATSAPP MESSAGE
-        */
-        const whatsappMessage =
+
+
+    if(!document.getElementById("consent").checked){
+
+        status.className = "error";
+
+        status.textContent =
+            "Please agree to the contact consent.";
+
+        return;
+
+    }
+
+
+    /* ============================
+       CREATE WHATSAPP MESSAGE
+    ============================ */
+
+    const whatsappMessage =
 `Hello CEFABEX Innovations!
+
+New Enquiry
+
 Name: ${name}
+
 Email: ${email}
+
 WhatsApp: ${phone}
+
 Service: ${service}
+
 Requirement:
-${message}`;
-        const encodedMessage =
+${message || "Not provided"}`;
+
+
+    const whatsappURL =
+        "https://wa.me/" +
+        WHATSAPP_NUMBER +
+        "?text=" +
         encodeURIComponent(whatsappMessage);
-        /*
-        OPEN WHATSAPP
-        */
-        setTimeout(function() {
-            window.open(
-                "https://wa.me/" +
-                WHATSAPP_NUMBER +
-                "?text=" +
-                encodedMessage,
-                "_blank"
-            );
-        }, 700);
-        /*
-        RESET FORM
-        */
-        form.reset();
-    } catch (error) {
-        console.error(error);
-        statusBox.className =
-        "error";
-        statusBox.textContent =
-        "Something went wrong. Please try again.";
-    }
+
+
     /*
-    ENABLE BUTTON
+       OPEN WHATSAPP IMMEDIATELY.
+
+       This happens before the Google Sheet
+       request so WhatsApp does not depend
+       on the Apps Script response.
     */
-    button.disabled = false;
-    button.textContent =
-    "SEND ENQUIRY →";
+
+    window.open(whatsappURL, "_blank");
+
+
+    /* ============================
+       SEND TO GOOGLE SHEET
+    ============================ */
+
+    button.disabled = true;
+
+    button.textContent = "SUBMITTING...";
+
+    status.className = "";
+
+    status.textContent =
+        "Sending your enquiry...";
+
+
+    const data = new URLSearchParams();
+
+    data.append("name", name);
+
+    data.append("email", email);
+
+    data.append("phone", phone);
+
+    data.append("service", service);
+
+    data.append("requirement", message);
+
+
+    fetch(
+        SCRIPT_URL,
+        {
+            method:"POST",
+
+            mode:"no-cors",
+
+            headers:{
+                "Content-Type":
+                "application/x-www-form-urlencoded"
+            },
+
+            body:data.toString()
+        }
+    )
+    .then(function(){
+
+        status.className = "success";
+
+        status.textContent =
+            "✓ Enquiry submitted successfully!";
+
+        form.reset();
+
+        button.disabled = false;
+
+        button.textContent =
+            "SEND ENQUIRY →";
+
+    })
+    .catch(function(error){
+
+        console.error(error);
+
+        status.className = "error";
+
+        status.textContent =
+            "WhatsApp opened. Please try submitting again if needed.";
+
+        button.disabled = false;
+
+        button.textContent =
+            "SEND ENQUIRY →";
+
+    });
+
 });
+
 </script>
+
 </body>
 </html>
